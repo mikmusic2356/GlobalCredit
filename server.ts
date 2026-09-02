@@ -53,6 +53,11 @@ app.get("/robots.txt", (req, res) => {
   res.send(txt);
 });
 
+app.get("/ads.txt", (req, res) => {
+  res.header("Content-Type", "text/plain; charset=utf-8");
+  res.send("google.com, pub-5108692655083046, DIRECT, f08c47fec0942fa0\n");
+});
+
 // API Routes
 // 1. Health Check with DB Status
 app.get("/api/health", async (req, res) => {

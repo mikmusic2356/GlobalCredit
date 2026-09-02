@@ -516,8 +516,8 @@ export const DEFAULT_AD_PLACEMENT_CONFIG: AdPlacementConfig = {
   adSlotBeforeSources: true,
   adSlotBottom: true,
   adSlotSidebar: true,
-  globalClientCode: 'ca-pub-9876543210123456',
-  testMode: true,
+  globalClientCode: 'ca-pub-5108692655083046',
+  testMode: false,
   showLabels: true
 };
 
@@ -530,14 +530,14 @@ export const DEFAULT_COOKIE_CATEGORIES: CookieCategoryConfig[] = [
     enabled: true,
     cookies: [
       {
-        name: 'gc_session_id',
-        provider: 'GlobalCredit Platform',
+        name: 'ci_session_id',
+        provider: 'CardInsight Online',
         purpose: 'Maintains user UI states and chosen country preferences.',
         expiry: 'Session / 1 year'
       },
       {
-        name: 'gc_cookie_consent',
-        provider: 'GlobalCredit Platform',
+        name: 'ci_cookie_consent',
+        provider: 'CardInsight Online',
         purpose: 'Stores user consent preferences for compliance auditing.',
         expiry: '12 months'
       }
