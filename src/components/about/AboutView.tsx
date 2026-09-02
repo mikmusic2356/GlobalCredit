@@ -87,7 +87,7 @@ export const AboutView: React.FC = () => {
         </h2>
         <div className="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
           <p>
-            To keep this comprehensive global credit database completely free and open for public benefit, GlobalCredit displays contextual digital advertisements served primarily via <strong>Google AdSense</strong>.
+            To keep this comprehensive global credit database completely free and open for public benefit, <strong>CardInsight Online</strong> displays contextual digital advertisements served primarily via <strong>Google AdSense</strong>.
           </p>
           <ul className="space-y-2 list-disc list-inside bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700">
             <li><strong>Non-Intrusive Layouts:</strong> We never deploy popups, forced timer countdowns, screen takeovers, or deceptive link placements.</li>
@@ -107,7 +107,7 @@ export const AboutView: React.FC = () => {
           Not a Bank, Lender, or Financial Advisor
         </h3>
         <p className="text-xs text-slate-300 leading-relaxed">
-          GlobalCredit is an independent informational publisher. We do not provide credit, issue cards, collect credit applications, perform credit scoring, or offer personalized investment advice. All financial calculations and rates are provided for comparative educational analysis. Before applying for any credit product, consumers must consult the issuing institution's direct regulatory disclosures.
+          <strong>CardInsight Online</strong> is an independent informational publisher. We do not provide credit, issue cards, collect credit applications, perform credit scoring, or offer personalized investment advice. All financial calculations and rates are provided for comparative educational analysis. Before applying for any credit product, consumers must consult the issuing institution's direct regulatory disclosures.
         </p>
       </div>
 

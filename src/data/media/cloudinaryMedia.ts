@@ -8,7 +8,7 @@ export const CLOUDINARY_MEDIA_LIBRARY: MediaItem[] = [
     url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_from_credit_card_202609012108_2.jpg',
     alt: 'Conceptual visualization of financial credit limits and liquidity streaming from modern credit card',
     caption: 'Revolving credit limits provide immediate purchasing power and cash flow flexibility.',
-    source: 'GlobalCredit Media Archive',
+    source: 'CardInsight Media Archive',
     dimensions: { width: 1200, height: 800 },
     fileSize: '160 KB',
     usageCount: 1,

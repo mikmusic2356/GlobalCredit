@@ -362,23 +362,23 @@ export const RouteUrls = {
 // Update Document Meta for SEO
 export function updateDocumentSeo(state: RouteState): void {
   const countryName = COUNTRIES_DATA[state.country]?.name || 'Global';
-  let title = 'GlobalCredit — International Credit Card & Financial Intelligence';
+  let title = 'CardInsight Online — International Credit Card & Financial Intelligence';
   let description = 'Compare credit cards, understand APR & credit scores, calculate debt payoff and learn consumer rights across US, UK, Canada, Australia and New Zealand.';
 
   if (state.tab === 'home') {
-    title = 'GlobalCredit — International Credit Card Intelligence, Rates & Scores';
+    title = 'CardInsight Online — International Credit Card Intelligence, Rates & Scores';
     description = 'Authoritative credit card directory, APR and balance transfer calculators, FICO and credit score guides, and statutory rights across 5 sovereign jurisdictions.';
   } else if (state.tab === 'cards') {
     if (state.activeCard) {
-      title = `${state.activeCard.name} Review & Schumer Box (${countryName}) | GlobalCredit`;
+      title = `${state.activeCard.name} Review & Schumer Box (${countryName}) | CardInsight Online`;
       description = `Complete financial review for ${state.activeCard.name} by ${state.activeCard.issuer}. Regular APR ${state.activeCard.regularApr.rateDisplay}, Annual fee $${state.activeCard.annualFee}, rewards structure, perks, pros & cons.`;
     } else if (state.category && state.category !== 'all') {
       const catMeta = CATEGORIES_DATA.find((c) => c.id === state.category);
       const catName = catMeta ? catMeta.name : state.category;
-      title = `Best ${catName} Credit Cards in ${countryName} (2026) | GlobalCredit`;
+      title = `Best ${catName} Credit Cards in ${countryName} (2026) | CardInsight Online`;
       description = `Compare verified ${catName} credit cards in ${countryName}. Filter by APR, annual fee, rewards multipliers, and introductory balance transfer promotions.`;
     } else {
-      title = `Credit Cards in ${countryName} — Compare Rates, Fees & Rewards | GlobalCredit`;
+      title = `Credit Cards in ${countryName} — Compare Rates, Fees & Rewards | CardInsight Online`;
       description = `Explore all verified credit cards available in ${countryName}. Objective Schumer box data, introductory rates, rewards comparison, and issuer disclosures.`;
     }
   } else if (state.tab === 'credit-score') {
@@ -393,10 +393,10 @@ export function updateDocumentSeo(state: RouteState): void {
         factors: '5 Core Credit Scoring Factors & Math Formulas',
         simulator: 'Interactive Credit Score Simulator & Strategy Roadmap',
       };
-      title = `${subLabels[state.creditScoreSubRoute]} | GlobalCredit`;
+      title = `${subLabels[state.creditScoreSubRoute]} | CardInsight Online`;
       description = `In-depth educational breakdown of credit scores in ${countryName}. Calculation formulas, bureau dispute rights, score ranges, and actionable credit building steps.`;
     } else {
-      title = 'Credit Scores Explained — FICO, VantageScore & International Bureaus | GlobalCredit';
+      title = 'Credit Scores Explained — FICO, VantageScore & International Bureaus | CardInsight Online';
       description = 'Understand how credit scores work worldwide. 5 core factors, free legal statutory reports, dispute rights with CFPB, FCA, FCAC, ASIC, and score simulator.';
     }
   } else if (state.tab === 'calculators') {
@@ -466,7 +466,7 @@ export function updateDocumentSeo(state: RouteState): void {
   }
   metaDesc.setAttribute('content', description);
 
-  // Open Graph Title & Description
+  // Open Graph Title, Description, Site Name
   let ogTitle = document.querySelector('meta[property="og:title"]');
   if (!ogTitle) {
     ogTitle = document.createElement('meta');
@@ -483,12 +483,59 @@ export function updateDocumentSeo(state: RouteState): void {
   }
   ogDesc.setAttribute('content', description);
 
-  // Canonical Link
+  let ogSiteName = document.querySelector('meta[property="og:site_name"]');
+  if (!ogSiteName) {
+    ogSiteName = document.createElement('meta');
+    ogSiteName.setAttribute('property', 'og:site_name');
+    document.head.appendChild(ogSiteName);
+  }
+  ogSiteName.setAttribute('content', 'CardInsight Online');
+
+  // Canonical Link: strictly canonical cardinsight.online
+  const canonicalBase = 'https://cardinsight.online';
   let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
   if (!canonical) {
     canonical = document.createElement('link');
     canonical.setAttribute('rel', 'canonical');
     document.head.appendChild(canonical);
   }
-  canonical.setAttribute('href', `${window.location.origin}${state.path}`);
+  canonical.setAttribute('href', `${canonicalBase}${state.path}`);
+
+  // Structured Data Schema.org (WebSite + Organization)
+  let schemaScript = document.querySelector('#schema-cardinsight-jsonld') as HTMLScriptElement | null;
+  if (!schemaScript) {
+    schemaScript = document.createElement('script');
+    schemaScript.id = 'schema-cardinsight-jsonld';
+    schemaScript.type = 'application/ld+json';
+    document.head.appendChild(schemaScript);
+  }
+
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://cardinsight.online/#organization',
+        'name': 'CardInsight Online',
+        'url': 'https://cardinsight.online',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://cardinsight.online/favicon.svg',
+          'width': 512,
+          'height': 512
+        },
+        'description': 'Independent credit card information platform and financial intelligence hub across the US, UK, Canada, Australia, and New Zealand.'
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://cardinsight.online/#website',
+        'url': 'https://cardinsight.online',
+        'name': 'CardInsight Online',
+        'publisher': {
+          '@id': 'https://cardinsight.online/#organization'
+        }
+      }
+    ]
+  };
+  schemaScript.textContent = JSON.stringify(structuredData);
 }

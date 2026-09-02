@@ -19,12 +19,12 @@ export function generateSitemapUrls(baseUrl: string = 'https://cardinsight.onlin
     { path: '/cards', changefreq: 'daily', priority: 0.9 },
     { path: '/guides', changefreq: 'daily', priority: 0.9 },
     { path: '/news', changefreq: 'daily', priority: 0.9 },
-    { path: '/calculators', changefreq: 'weekly', priority: 0.8 },
+    { path: '/calculators', changefreq: 'weekly', priority: 0.85 },
+    { path: '/credit-scores', changefreq: 'weekly', priority: 0.85 },
     { path: '/compare', changefreq: 'weekly', priority: 0.8 },
-    { path: '/glossary', changefreq: 'monthly', priority: 0.7 },
-    { path: '/debt-help', changefreq: 'monthly', priority: 0.7 },
+    { path: '/countries', changefreq: 'monthly', priority: 0.75 },
+    { path: '/resources', changefreq: 'monthly', priority: 0.75 },
     { path: '/about', changefreq: 'monthly', priority: 0.6 },
-    { path: '/trust', changefreq: 'monthly', priority: 0.6 },
     { path: '/terms', changefreq: 'monthly', priority: 0.5 },
     { path: '/privacy-policy', changefreq: 'monthly', priority: 0.5 },
     { path: '/cookie-policy', changefreq: 'monthly', priority: 0.5 },
@@ -39,26 +39,59 @@ export function generateSitemapUrls(baseUrl: string = 'https://cardinsight.onlin
     });
   }
 
+  // 1.1 Specific Calculator Modules
+  const calculatorSlugs = ['payoff', 'balance-transfer', 'rewards', 'intro-plan', 'utilization', 'foreign-fee'];
+  for (const calc of calculatorSlugs) {
+    urls.push({
+      loc: `${baseUrl}/calculators/${calc}`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: 0.8,
+    });
+  }
+
+  // 1.2 Specific Credit Score Hubs & Tools
+  const creditScoreSubRoutes = ['us', 'uk', 'ca', 'au', 'nz', 'factors', 'simulator'];
+  for (const sub of creditScoreSubRoutes) {
+    urls.push({
+      loc: `${baseUrl}/credit-scores/${sub}`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: 0.8,
+    });
+  }
+
+  // 1.3 Resources Sections
+  const resourceSubRoutes = ['glossary', 'regulators', 'counseling'];
+  for (const sub of resourceSubRoutes) {
+    urls.push({
+      loc: `${baseUrl}/resources/${sub}`,
+      lastmod: today,
+      changefreq: 'monthly',
+      priority: 0.7,
+    });
+  }
+
   // 2. Country Specific Hubs
   const countries = ['us', 'ca', 'uk', 'au', 'nz'];
   for (const c of countries) {
     urls.push({
-      loc: `${baseUrl}/${c}`,
-      lastmod: today,
-      changefreq: 'daily',
-      priority: 0.9,
-    });
-    urls.push({
-      loc: `${baseUrl}/${c}/cards`,
+      loc: `${baseUrl}/countries/${c}`,
       lastmod: today,
       changefreq: 'daily',
       priority: 0.85,
     });
     urls.push({
-      loc: `${baseUrl}/${c}/guides`,
+      loc: `${baseUrl}/cards/${c}`,
       lastmod: today,
       changefreq: 'daily',
       priority: 0.85,
+    });
+    urls.push({
+      loc: `${baseUrl}/compare/${c}`,
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: 0.8,
     });
   }
 
@@ -102,14 +135,14 @@ export function generateSitemapUrls(baseUrl: string = 'https://cardinsight.onlin
     });
   }
 
-  // 5. Card Product Detail Pages
+  // 5. Card Product Detail Pages (/cards/:country/:id)
   for (const card of CREDIT_CARDS_DATA) {
     if (!card.id) continue;
     urls.push({
-      loc: `${baseUrl}/cards/${card.id}`,
+      loc: `${baseUrl}/cards/${card.country}/${card.id}`,
       lastmod: today,
       changefreq: 'weekly',
-      priority: 0.7,
+      priority: 0.75,
     });
   }
 

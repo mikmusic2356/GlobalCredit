@@ -12,7 +12,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Legislation & Regulation',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Regulatory & Policy Correspondent',
     },
     featuredImage: {

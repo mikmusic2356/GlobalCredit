@@ -122,7 +122,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'How Credit Card APR Works: Interest Calculation Guide (2026)',
       metaDescription: 'Learn how credit card APR works, how daily interest compounds on revolving balances, and how to utilize the 21-day grace period to pay zero interest.',
-      canonicalUrl: 'https://globalcredit.info/us/guides/how-credit-card-apr-works/',
+      canonicalUrl: 'https://cardinsight.online/article/how-credit-card-apr-works',
       primaryKeyword: 'how credit card APR works',
       secondaryKeywords: ['credit card interest calculation', 'daily periodic rate', 'grace period credit card'],
       ogTitle: 'How Credit Card APR Works: Full Calculation & Grace Period Guide',
@@ -198,7 +198,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'What Is Credit Utilization? The 10% Ratio Rule Explained (2026)',
       metaDescription: 'Discover how credit utilization impacts 30% of your credit score, how statement reporting dates work, and the exact AZEO strategy to maximize points.',
-      canonicalUrl: 'https://globalcredit.info/us/guides/what-is-credit-utilization-ratio/',
+      canonicalUrl: 'https://cardinsight.online/article/what-is-credit-utilization-ratio',
       primaryKeyword: 'credit utilization ratio',
       secondaryKeywords: ['how to lower credit utilization', 'credit score factors', 'statement closing date balance'],
       ogTitle: 'What Is Credit Utilization Ratio? Complete Optimization Guide',
@@ -274,7 +274,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'How Balance Transfers Work: 0% APR Rules & Hidden Fees (2026)',
       metaDescription: 'Complete guide on how 0% balance transfers work, how to calculate the transfer fee breakeven point, and how to pay off debt interest-free.',
-      canonicalUrl: 'https://globalcredit.info/us/guides/how-balance-transfers-work/',
+      canonicalUrl: 'https://cardinsight.online/article/how-balance-transfers-work',
       primaryKeyword: 'how balance transfers work',
       secondaryKeywords: ['0% APR balance transfer', 'balance transfer fee calculation', 'credit card debt consolidation'],
       ogTitle: 'How 0% Intro APR Balance Transfers Work & Traps to Avoid',
@@ -351,7 +351,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'Central Bank Rate Decisions & Credit Card APR Impact (2026)',
       metaDescription: 'Analysis of recent central bank rate updates and how Prime Rate adjustments flow into consumer credit card variable interest rates.',
-      canonicalUrl: 'https://globalcredit.info/us/news/central-banks-rate-decisions-credit-card-apr-impact/',
+      canonicalUrl: 'https://cardinsight.online/article/central-banks-rate-decisions-credit-card-apr-impact',
       primaryKeyword: 'credit card interest rate changes',
       secondaryKeywords: ['prime rate credit card APR', 'federal reserve card interest'],
       ogTitle: 'Central Bank Rate Decisions: Impact on Card APRs',
@@ -421,7 +421,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'Holiday Shopping Card Strategies: 5% Cash Back & Purchase Protection',
       metaDescription: 'Guide to Q4 credit card promotions, 5% bonus activation, and purchase security protections for seasonal consumer purchases.',
-      canonicalUrl: 'https://globalcredit.info/us/news/holiday-shopping-credit-card-rewards-promotions/',
+      canonicalUrl: 'https://cardinsight.online/article/holiday-shopping-credit-card-rewards-promotions',
       primaryKeyword: 'holiday credit card cash back',
       secondaryKeywords: ['purchase protection credit card', '5% cash back rotating categories'],
       ogTitle: 'Seasonal Shopping Credit Card Strategies',
@@ -451,7 +451,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
       url: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80',
       alt: 'Credit card held in hand demonstrating starter credit card setup',
       caption: 'Secured credit cards require a refundable security deposit that serves as the cardholder credit limit.',
-      credit: 'GlobalCredit Team'
+      credit: 'CardInsight Editorial Team'
     },
     blocks: [
       {
@@ -490,7 +490,7 @@ export const INITIAL_CMS_ARTICLES: CmsArticle[] = [
     seo: {
       title: 'Credit Building for Beginners: Secured vs Unsecured Cards',
       metaDescription: 'Learn how to build credit from zero using secured cards, how deposit graduation works, and steps to reach a 700+ score in 12 months.',
-      canonicalUrl: 'https://globalcredit.info/us/guides/credit-building-for-beginners-secured-vs-unsecured/',
+      canonicalUrl: 'https://cardinsight.online/article/credit-building-for-beginners-secured-vs-unsecured',
       primaryKeyword: 'how to build credit for beginners',
       secondaryKeywords: ['secured vs unsecured card', 'starter credit cards'],
       ogTitle: 'Credit Building for Beginners: Starter Cards Guide',
