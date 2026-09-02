@@ -52,19 +52,6 @@ export const CardsView: React.FC<CardsViewProps> = ({
   onToggleCompare,
   onNavigateToCompare,
 }) => {
-  // If an active card is selected, render the dedicated SEO Card Detail Page
-  if (activeCard) {
-    return (
-      <CardDetailPage
-        card={activeCard}
-        onBack={() => onSelectCard(null)}
-        onSelectOtherCard={(card) => onSelectCard(card)}
-        onToggleCompare={onToggleCompare}
-        isCompared={comparedCards.some((c) => c.id === activeCard.id)}
-        onNavigateToCompare={onNavigateToCompare}
-      />
-    );
-  }
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState<'featured' | 'fee-low' | 'apr-low' | 'rating'>('featured');
   const [isFilterExpanded, setIsFilterExpanded] = useState(false);
@@ -197,6 +184,20 @@ export const CardsView: React.FC<CardsViewProps> = ({
 
     return list;
   }, [filters, searchTerm, sortBy]);
+
+  // If an active card is selected, render the dedicated SEO Card Detail Page (AFTER all hooks)
+  if (activeCard) {
+    return (
+      <CardDetailPage
+        card={activeCard}
+        onBack={() => onSelectCard(null)}
+        onSelectOtherCard={(card) => onSelectCard(card)}
+        onToggleCompare={onToggleCompare}
+        isCompared={comparedCards.some((c) => c.id === activeCard.id)}
+        onNavigateToCompare={onNavigateToCompare}
+      />
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">

@@ -43,18 +43,6 @@ export const NewsView: React.FC<NewsViewProps> = ({
     }
   };
 
-  // If a news item is selected, render its dedicated blog article page directly (no popups)
-  if (activeNews) {
-    return (
-      <NewsArticlePage
-        news={activeNews}
-        onBack={() => handleSelectNews(null)}
-        onSelectOtherNews={(item) => handleSelectNews(item)}
-        selectedCountry={selectedCountry}
-      />
-    );
-  }
-
   const categories = useMemo(() => {
     const set = new Set<string>();
     NEWS_AND_TRENDS_DATA.forEach((item) => set.add(item.category));
@@ -71,6 +59,18 @@ export const NewsView: React.FC<NewsViewProps> = ({
       return matchCategory && matchCountry;
     });
   }, [selectedCategory, selectedCountryFilter]);
+
+  // If a news item is selected, render its dedicated blog article page directly (AFTER all hooks)
+  if (activeNews) {
+    return (
+      <NewsArticlePage
+        news={activeNews}
+        onBack={() => handleSelectNews(null)}
+        onSelectOtherNews={(item) => handleSelectNews(item)}
+        selectedCountry={selectedCountry}
+      />
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-in fade-in duration-150">

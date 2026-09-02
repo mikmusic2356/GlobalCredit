@@ -61,18 +61,6 @@ export const GuidesView: React.FC<GuidesViewProps> = ({
   const [currentPage, setCurrentPage] = useState<number>(1);
   const country = COUNTRIES_DATA[selectedCountry] || COUNTRIES_DATA['us'];
 
-  // If a legacy guide is selected, render its dedicated page
-  if (activeGuide) {
-    return (
-      <GuideArticlePage
-        guide={activeGuide}
-        onBack={() => onSelectGuide(null)}
-        onSelectOtherGuide={(g) => onSelectGuide(g)}
-        onNavigateToCreditScores={onNavigateToCreditScores}
-      />
-    );
-  }
-
   // Load all published CMS articles + legacy guides
   const unifiedGuides: UnifiedGuideItem[] = useMemo(() => {
     const cmsArticles = ArticleStoreService.getPublishedArticles().filter(
@@ -148,6 +136,18 @@ export const GuidesView: React.FC<GuidesViewProps> = ({
   const totalPages = Math.ceil(filteredGuides.length / ITEMS_PER_PAGE) || 1;
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginatedGuides = filteredGuides.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  // If a legacy guide is selected, render its dedicated page (AFTER all hooks)
+  if (activeGuide) {
+    return (
+      <GuideArticlePage
+        guide={activeGuide}
+        onBack={() => onSelectGuide(null)}
+        onSelectOtherGuide={(g) => onSelectGuide(g)}
+        onNavigateToCreditScores={onNavigateToCreditScores}
+      />
+    );
+  }
 
   const handleCategoryChange = (cat: string) => {
     setSelectedCategory(cat);
