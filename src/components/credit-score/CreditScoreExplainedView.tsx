@@ -48,24 +48,28 @@ export const CreditScoreExplainedView: React.FC<CreditScoreExplainedViewProps> =
   onNavigateToCards,
   openAiAssistant,
 }) => {
+  const validCountries: CountryCode[] = ['us', 'uk', 'ca', 'au', 'nz'];
+  const safeCountry: CountryCode = validCountries.includes(selectedCountry) ? selectedCountry : 'us';
   const [activeFactor, setActiveFactor] = useState<number>(0);
-  const [activeScoreBandCountry, setActiveScoreBandCountry] = useState<CountryCode>(selectedCountry);
+  const [activeScoreBandCountry, setActiveScoreBandCountry] = useState<CountryCode>(safeCountry);
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   // Sync with selectedCountry prop
   useEffect(() => {
-    setActiveScoreBandCountry(selectedCountry);
+    if (validCountries.includes(selectedCountry)) {
+      setActiveScoreBandCountry(selectedCountry);
+    }
   }, [selectedCountry]);
 
   // Sync with subRoute
   useEffect(() => {
-    if (subRoute && ['us', 'uk', 'ca', 'au', 'nz'].includes(subRoute)) {
+    if (subRoute && validCountries.includes(subRoute as CountryCode)) {
       setActiveScoreBandCountry(subRoute as CountryCode);
       setSelectedCountry(subRoute as CountryCode);
     }
   }, [subRoute, setSelectedCountry]);
 
-  const currentCountry = COUNTRIES_DATA[selectedCountry];
+  const currentCountry = COUNTRIES_DATA[safeCountry] || COUNTRIES_DATA['us'];
 
   // 5 Core Scoring Factors Data
   const scoringFactors = [
