@@ -97,7 +97,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Fintech & Issuers',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Fintech & Rewards Analyst',
     },
     featuredImage: {
@@ -165,7 +165,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Macroeconomic Reports',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Macroeconomic Research Specialist',
     },
     featuredImage: {
@@ -233,7 +233,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Card Benefits',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Consumer Travel & Card Perks Editor',
     },
     featuredImage: {
@@ -301,7 +301,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Rewards & Loyalty',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Frequent Flyer & Loyalty Specialist',
     },
     featuredImage: {
@@ -369,7 +369,7 @@ export const BATCH_5_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Fintech & Portals',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Banking Ecosystem Strategist',
     },
     featuredImage: {

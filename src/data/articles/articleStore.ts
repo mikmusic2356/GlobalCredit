@@ -582,7 +582,7 @@ export const DEFAULT_COOKIE_CATEGORIES: CookieCategoryConfig[] = [
     cookies: [
       {
         name: 'gc_compare_tray',
-        provider: 'GlobalCredit Platform',
+        provider: 'CardInsight Online Platform',
         purpose: 'Persists user-selected card comparison matrix items.',
         expiry: '6 months'
       }
@@ -602,9 +602,9 @@ export const DEFAULT_COOKIE_CONSENT: CookieConsentState = {
 };
 
 // Storage keys
-const ARTICLES_STORAGE_KEY = 'globalcredit_cms_articles_v1';
-const ADS_CONFIG_STORAGE_KEY = 'globalcredit_cms_ads_config_v1';
-const COOKIE_CONSENT_STORAGE_KEY = 'globalcredit_cookie_consent_v1';
+const ARTICLES_STORAGE_KEY = 'cardinsight_cms_articles_v1';
+const ADS_CONFIG_STORAGE_KEY = 'cardinsight_cms_ads_config_v1';
+const COOKIE_CONSENT_STORAGE_KEY = 'cardinsight_cookie_consent_v1';
 
 export class ArticleStoreService {
   private static articles: CmsArticle[] = [];

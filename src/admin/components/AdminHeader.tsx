@@ -80,7 +80,7 @@ export const AdminHeader: React.FC<AdminHeaderProps> = ({
             {getSectionTitle()}
           </h1>
           <p className="text-[11px] text-slate-400 font-medium hidden sm:block mt-0.5">
-            GlobalCredit CMS &bull; International Publishing Engine
+            CardInsight Online CMS &bull; International Publishing Engine
           </p>
         </div>
       </div>

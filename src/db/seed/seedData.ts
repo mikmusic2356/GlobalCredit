@@ -82,9 +82,9 @@ export async function seedDatabase() {
     {
       id: 'src-staff',
       source_type: 'OTHER',
-      organization: 'GlobalCredit Independent Editorial Team',
+      organization: 'CardInsight Editorial Team',
       title: 'Primary Document Verification & Issuer Product Factsheet Archive',
-      url: 'https://globalcredit.org/methodology',
+      url: 'https://cardinsight.online/methodology',
     }
   ];
 
@@ -264,7 +264,7 @@ export async function seedDatabase() {
         art.blocks ? JSON.stringify(art.blocks) : '[]',
         isNews ? 'NEWS' : 'GUIDE',
         (art.status || 'PUBLISHED').toUpperCase(),
-        art.author?.name || 'GlobalCredit Editorial Staff',
+        art.author?.name || 'CardInsight Editorial Staff',
         art.publishedDate || '2026-08-01',
         art.lastUpdatedDate || '2026-08-15',
         'VERIFIED',
@@ -301,9 +301,9 @@ export async function seedDatabase() {
   // 8. Seed Site Settings
   console.log('[Seed] Seeding Site Settings...');
   const settings = [
-    { key: 'site_name', value: 'GlobalCredit — International Credit Card Information Platform', type: 'string' },
+    { key: 'site_name', value: 'CardInsight Online — International Credit Card Information Platform', type: 'string' },
     { key: 'site_description', value: 'Independent, verified credit card directory and financial education covering US, UK, Canada, Australia, and New Zealand.', type: 'string' },
-    { key: 'contact_email', value: 'editorial@globalcredit.org', type: 'string' },
+    { key: 'contact_email', value: 'editorial@cardinsight.online', type: 'string' },
     { key: 'default_country', value: 'US', type: 'string' },
     { key: 'adsense_enabled', value: 'true', type: 'boolean' },
     { key: 'cookie_consent_required', value: 'true', type: 'boolean' },

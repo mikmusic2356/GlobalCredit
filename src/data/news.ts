@@ -320,7 +320,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_from_credit_card_202609012108.jpg',
       alt: 'Financial points currency stream evaporating representing 2026 loyalty devaluations',
       caption: 'Dynamic award pricing and bank transfer ratio reductions make points hoarding a losing strategy.',
-      credit: 'GlobalCredit Intelligence'
+      credit: 'CardInsight Intelligence'
     }
   },
 
@@ -347,7 +347,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315179/Hands_holding_credit_card_laptop_202609012108_2.jpg',
       alt: 'Comparing travel portal booking prices against direct airline reservation screens',
       caption: 'Banks are launching Points Boost programs to keep customer travel bookings inside their closed-loop apps.',
-      credit: 'GlobalCredit Media Archive'
+      credit: 'CardInsight Media Archive'
     }
   },
 

@@ -471,7 +471,7 @@ export const CardDetailPage: React.FC<CardDetailPageProps> = ({
             </div>
 
             <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-400 leading-normal">
-              Datos auditados bajo normativas de transparencia financiera. GlobalCredit no es una entidad prestamista.
+              Datos auditados bajo normativas de transparencia financiera. CardInsight Online no es una entidad prestamista.
             </div>
           </div>
 

@@ -226,12 +226,12 @@ app.post("/api/ai/credit-explainer", async (req, res) => {
       // Return structured fallback informational response when key isn't provided
       return res.json({
         answer: `Credit Information Overview for ${country || "International"}: In ${country || "global markets"}, credit cards are subject to specific national consumer credit legislation. For factual verified details, consult the respective regulator (CFPB in the US, FCA in the UK, FCAC in Canada, ASIC in Australia, Commerce Commission in NZ).`,
-        disclaimer: "Informational educational summary. GlobalCredit does not provide personalized legal or financial advice.",
+        disclaimer: "Informational educational summary. CardInsight Online does not provide personalized legal or financial advice.",
         sourceRegulator: country === "UK" ? "Financial Conduct Authority (FCA)" : country === "US" ? "Consumer Financial Protection Bureau (CFPB)" : country === "CA" ? "Financial Consumer Agency of Canada (FCAC)" : country === "AU" ? "ASIC" : "National Financial Regulators"
       });
     }
 
-    const systemPrompt = `You are a factual, highly professional financial education specialist at GlobalCredit, an independent international credit card information directory.
+    const systemPrompt = `You are a factual, highly professional financial education specialist at CardInsight Online, an independent international credit card information directory.
 You provide free, structured, clear, and mathematically accurate explanations of credit cards, personal credit, rewards, interest rates (APR vs Representative APR, Purchase Rates), credit scores (FICO, VantageScore, Equifax, Experian, TransUnion, Illion, Centrix), balance transfers, fees, debt payoff methods, and consumer protection laws (Section 75 in UK, Truth in Lending Act & CARD Act in US, National Credit Code in Australia, Bank Act in Canada, Credit Contracts and Consumer Finance Act in NZ).
 
 CRITICAL RULES:
@@ -261,7 +261,7 @@ CRITICAL RULES:
     return res.json({
       answer: text,
       country: country || "Global",
-      disclaimer: "GlobalCredit is an independent informational resource. Not financial advice.",
+      disclaimer: "CardInsight Online is an independent informational resource. Not financial advice.",
     });
   } catch (error: any) {
     console.error("AI Explainer Error:", error);
@@ -288,7 +288,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`GlobalCredit Server active on http://0.0.0.0:${PORT}`);
+    console.log(`CardInsight Server active on http://0.0.0.0:${PORT}`);
   });
 }
 

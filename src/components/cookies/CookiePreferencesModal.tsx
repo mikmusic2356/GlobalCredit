@@ -119,7 +119,7 @@ export const CookiePreferencesModal: React.FC<CookiePreferencesModalProps> = ({
                 Privacy & Cookie Preferences
               </h2>
               <p className="text-xs text-slate-500">
-                Control how GlobalCredit stores preferences and loads analytics or advertising units.
+                Control how CardInsight Online stores preferences and loads analytics or advertising units.
               </p>
             </div>
           </div>

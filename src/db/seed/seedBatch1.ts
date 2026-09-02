@@ -13,7 +13,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Credit & Compliance Analyst',
     },
     featuredImage: {
@@ -107,7 +107,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Financial Analyst',
     },
     featuredImage: {
@@ -185,7 +185,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Consumer Debt Specialist',
     },
     featuredImage: {
@@ -256,7 +256,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Score Modeling Specialist',
     },
     featuredImage: {
@@ -331,7 +331,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Debt Payoff',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Personal Finance Editor',
     },
     featuredImage: {
@@ -401,7 +401,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Balance Transfers',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Card Products Analyst',
     },
     featuredImage: {
@@ -467,7 +467,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Building',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Building Specialist',
     },
     featuredImage: {
@@ -537,7 +537,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Travel & Rewards Strategist',
     },
     featuredImage: {
@@ -582,9 +582,9 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     sources: [
       {
         id: 'src-editorial-travel',
-        name: 'GlobalCredit Industry Analysis on Premium Card Statement Credits',
+        name: 'CardInsight Industry Analysis on Premium Card Statement Credits',
         type: 'Research Organization',
-        url: 'https://globalcredit.org',
+        url: 'https://cardinsight.online',
       }
     ],
     seo: {
@@ -607,7 +607,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Rewards Strategy Analyst',
     },
     featuredImage: {
@@ -677,7 +677,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Consumer Protection',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Regulatory Compliance Specialist',
     },
     featuredImage: {
@@ -773,7 +773,7 @@ export async function seedBatch1() {
         JSON.stringify(art.blocks),
         'GUIDE',
         (art.status || 'PUBLISHED').toUpperCase(),
-        art.author?.name || 'GlobalCredit Editorial Staff',
+        art.author?.name || 'CardInsight Editorial Staff',
         art.author?.role || 'Financial Analyst',
         art.publishedDate || '2026-08-20',
         art.lastUpdatedDate || '2026-09-01',

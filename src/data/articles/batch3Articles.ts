@@ -12,14 +12,14 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Fees & Charges',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'International Travel & FX Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315178/Hand_holding_credit_card_beside_202609012108_3.jpg',
       alt: 'Holding zero foreign transaction fee travel credit card overseas',
       caption: 'Using cards with 0% foreign transaction fees eliminates 1% to 3% surcharges on international purchases and flights.',
-      credit: 'GlobalCredit Travel Desk'
+      credit: 'CardInsight Online Travel Desk'
     },
     blocks: [
       {
@@ -111,7 +111,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Balance Transfers',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Consumer Debt Specialist',
     },
     featuredImage: {
@@ -193,7 +193,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Consumer Protection',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Regulatory Compliance Specialist',
     },
     featuredImage: {
@@ -266,7 +266,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Fees & Charges',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Banking Operations Specialist',
     },
     featuredImage: {
@@ -334,7 +334,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Score Modeling Specialist',
     },
     featuredImage: {
@@ -402,14 +402,14 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Rewards Strategy Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_from_credit_card_202609012108_2.jpg',
       alt: 'Gold currency flow from credit card representing versatile multi-currency transferable points',
       caption: 'Flexible transferable points protect cardholders against single-airline loyalty program devaluations.',
-      credit: 'GlobalCredit Media Archive'
+      credit: 'CardInsight Media Archive'
     },
     blocks: [
       {
@@ -479,7 +479,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Underwriting Compliance Specialist',
     },
     featuredImage: {
@@ -547,7 +547,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Bureau Analyst',
     },
     featuredImage: {
@@ -615,7 +615,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Consumer Credit Advocacy Specialist',
     },
     featuredImage: {
@@ -683,7 +683,7 @@ export const BATCH_3_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Consumer Protection',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Regulatory Compliance Specialist',
     },
     featuredImage: {

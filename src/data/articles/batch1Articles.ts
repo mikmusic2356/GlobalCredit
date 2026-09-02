@@ -12,14 +12,14 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Credit & Compliance Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315181/Hands_reviewing_credit_card_stat__202609012108_4.jpg',
       alt: 'Cardholder reviewing interest-free grace period timeline between statement and due date',
       caption: 'The CARD Act mandates at least 21 days between statement closing and payment due dates.',
-      credit: 'GlobalCredit Educational Archive'
+      credit: 'CardInsight Online Educational Archive'
     },
     blocks: [
       {
@@ -116,7 +116,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Financial Analyst',
     },
     featuredImage: {
@@ -194,7 +194,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Consumer Debt Specialist',
     },
     featuredImage: {
@@ -265,7 +265,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Score Modeling Specialist',
     },
     featuredImage: {
@@ -340,7 +340,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Debt Payoff',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Personal Finance Editor',
     },
     featuredImage: {
@@ -410,7 +410,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Balance Transfers',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Card Products Analyst',
     },
     featuredImage: {
@@ -476,7 +476,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Building',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Building Specialist',
     },
     featuredImage: {
@@ -546,7 +546,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Travel & Rewards Strategist',
     },
     featuredImage: {
@@ -591,9 +591,9 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     sources: [
       {
         id: 'src-editorial-travel',
-        name: 'GlobalCredit Industry Analysis on Premium Card Statement Credits',
+        name: 'CardInsight Industry Analysis on Premium Card Statement Credits',
         type: 'Research Organization',
-        url: 'https://globalcredit.org',
+        url: 'https://cardinsight.online',
       }
     ],
     seo: {
@@ -616,7 +616,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Rewards Strategy Analyst',
     },
     featuredImage: {
@@ -686,7 +686,7 @@ export const BATCH_1_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Consumer Protection',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Regulatory Compliance Specialist',
     },
     featuredImage: {

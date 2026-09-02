@@ -1,6 +1,6 @@
-# GlobalCredit — Documentación de Base de Datos (Turso / libSQL / SQLite)
+# CardInsight Online — Documentación de Base de Datos (Turso / libSQL / SQLite)
 
-Este documento detalla la integración completa de la base de datos de producción con **Turso (libSQL/SQLite)** para la plataforma GlobalCredit.
+Este documento detalla la integración completa de la base de datos de producción con **Turso (libSQL/SQLite)** para la plataforma CardInsight Online.
 
 ---
 
@@ -96,7 +96,7 @@ curl http://localhost:3000/api/health
 {
   "status": "ok",
   "database": "connected",
-  "platform": "GlobalCredit — International Credit Card Information Platform",
+  "platform": "CardInsight Online — International Credit Card Information Platform",
   "supportedCountries": ["US", "CA", "UK", "AU", "NZ"]
 }
 ```

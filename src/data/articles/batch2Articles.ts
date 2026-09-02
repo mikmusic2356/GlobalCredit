@@ -12,14 +12,14 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Senior Credit & Compliance Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315178/Hand_holding_credit_card_beside_202609012108_6.jpg',
       alt: 'Premium metallic luxury credit card representing annual fee break-even analysis',
       caption: 'Luxury travel cards require rigorous net-cost analysis to ensure statement credits offset high annual fees.',
-      credit: 'GlobalCredit Media Archive'
+      credit: 'CardInsight Media Archive'
     },
     blocks: [
       {
@@ -44,7 +44,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
         url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315180/Hands_organizing_financial_state__202609012108_3.jpg',
         alt: 'Auditing premium credit card terms and statement credit vouchers',
         caption: 'Performing an annual review of card perks prevents paying hundreds in unredeemed fee renewals.',
-        credit: 'GlobalCredit Lab'
+        credit: 'CardInsight Lab'
       },
       {
         id: 'af-4',
@@ -116,7 +116,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Interest & APR',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Consumer Debt Specialist',
     },
     featuredImage: {
@@ -209,14 +209,14 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Rewards Strategy Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_through_financial___202609012108.jpg',
       alt: 'Digital financial valuation flows representing credit card loyalty points currencies',
       caption: 'Transferable rewards currencies fluctuate in value based on airline and hotel partner redemption ratios.',
-      credit: 'GlobalCredit Media Archive'
+      credit: 'CardInsight Media Archive'
     },
     blocks: [
       {
@@ -303,14 +303,14 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Travel Rewards Strategist',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315179/Hands_holding_credit_card_laptop_202609012108_2.jpg',
       alt: 'Searching travel portal flights and hotel bookings on laptop computer with card in hand',
       caption: 'Booking through bank travel portals offers convenience, while partner transfers deliver outsized value.',
-      credit: 'GlobalCredit Travel Desk'
+      credit: 'CardInsight Online Travel Desk'
     },
     blocks: [
       {
@@ -382,14 +382,14 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Rewards & Points',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Personal Finance Editor',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_from_credit_card_202609012108.jpg',
       alt: 'Financial stream eroding from credit card representing points devaluation inflation',
       caption: 'Reward points do not earn interest and lack FDIC protection, making point hoarding a losing strategy.',
-      credit: 'GlobalCredit Archive'
+      credit: 'CardInsight Archive'
     },
     blocks: [
       {
@@ -454,7 +454,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Travel & Rewards Strategist',
     },
     featuredImage: {
@@ -521,7 +521,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Building',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Credit Education Specialist',
     },
     featuredImage: {
@@ -595,7 +595,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Card Comparisons',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Commercial Credit Specialist',
     },
     featuredImage: {
@@ -663,7 +663,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Credit Scores',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Underwriting Compliance Analyst',
     },
     featuredImage: {
@@ -731,7 +731,7 @@ export const BATCH_2_ARTICLES: CmsArticle[] = [
     category: 'Financial Guides & Educational Articles',
     subcategory: 'Consumer Protection',
     author: {
-      name: 'GlobalCredit Editorial Team',
+      name: 'CardInsight Editorial Team',
       role: 'Regulatory Compliance Specialist',
     },
     featuredImage: {

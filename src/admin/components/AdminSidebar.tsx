@@ -83,7 +83,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
             </div>
             <div>
               <span className="font-extrabold text-slate-900 text-sm tracking-tight block">
-                GlobalCredit
+                CardInsight Online
               </span>
               <span className="text-[10px] uppercase font-bold tracking-wider text-blue-600">
                 Editorial CMS

@@ -61,7 +61,7 @@ export const AdBanner: React.FC<AdBannerProps> = ({ slotType, className = '', sl
           Sponsored Financial Content & Advertiser Links
         </p>
         <p className="text-[11px] text-slate-400 mt-1 max-w-md">
-          Non-intrusive Google AdSense compliant ad slot. Editorial content on GlobalCredit is strictly independent and never gated behind advertisements.
+          Non-intrusive Google AdSense compliant ad slot. Editorial content on CardInsight Online is strictly independent and never gated behind advertisements.
         </p>
       </div>
     </div>

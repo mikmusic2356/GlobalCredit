@@ -28,7 +28,7 @@ export const SeoPanelEditor: React.FC<SeoPanelEditorProps> = ({
       .replace(/^-+|-+$/g, '');
   };
 
-  const fullUrl = `https://globalcredit.info/${country}/${type === 'news' || type === 'trend' ? 'news' : 'guides'}/${slug}/`;
+  const fullUrl = `https://cardinsight.online/${country}/${type === 'news' || type === 'trend' ? 'news' : 'guides'}/${slug}/`;
 
   // Character lengths & health checks
   const titleLen = seo.title?.length || 0;
@@ -79,7 +79,7 @@ export const SeoPanelEditor: React.FC<SeoPanelEditorProps> = ({
             <span className="w-3.5 h-3.5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[8px] font-bold">
               G
             </span>
-            <span>globalcredit.info</span>
+            <span>cardinsight.online</span>
             <span className="text-slate-400">&rsaquo;</span>
             <span>{country}</span>
             <span className="text-slate-400">&rsaquo;</span>

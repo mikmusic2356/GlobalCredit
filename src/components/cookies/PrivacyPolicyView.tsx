@@ -75,7 +75,7 @@ export const PrivacyPolicyView: React.FC<PrivacyPolicyViewProps> = ({ onBackHome
         <section className="space-y-3 border-t border-slate-100 pt-6">
           <h2 className="text-lg font-bold text-slate-900">5. Contact Data Privacy Officer</h2>
           <p>
-            For questions regarding this policy or compliance auditing, please contact our compliance desk at <code>privacy@globalcredit.info</code>.
+            For questions regarding this policy or compliance auditing, please contact our compliance desk at <code>privacy@cardinsight.online</code>.
           </p>
         </section>
       </div>

@@ -32,7 +32,7 @@ export const CountrySelectorModal: React.FC<CountrySelectorModalProps> = ({
                 Select Country & Regulatory Framework
               </h2>
               <p className="text-xs text-slate-500">
-                GlobalCredit keeps financial rules, terminology, and legal protections strictly isolated by jurisdiction.
+                CardInsight Online keeps financial rules, terminology, and legal protections strictly isolated by jurisdiction.
               </p>
             </div>
           </div>

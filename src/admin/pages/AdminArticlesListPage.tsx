@@ -442,7 +442,7 @@ export const AdminArticlesListPage: React.FC<AdminArticlesListPageProps> = ({
         {/* Footer info in table */}
         <div className="p-3.5 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 flex items-center justify-between">
           <span>Showing {filteredArticles.length} of {articles.length} articles</span>
-          <span className="font-mono">GlobalCredit Publishing Engine</span>
+          <span className="font-mono">CardInsight Online Publishing Engine</span>
         </div>
       </div>
     </div>

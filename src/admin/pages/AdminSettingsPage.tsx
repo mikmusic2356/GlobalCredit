@@ -27,7 +27,7 @@ export const AdminSettingsPage: React.FC<AdminSettingsPageProps> = ({ onRefresh 
     const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(backup, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', dataStr);
-    downloadAnchor.setAttribute('download', `globalcredit_cms_backup_${Date.now()}.json`);
+    downloadAnchor.setAttribute('download', `cardinsight_cms_backup_${Date.now()}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();

@@ -59,7 +59,7 @@ export const SourcesEditor: React.FC<SourcesEditorProps> = ({
           <div className="space-y-1 text-xs">
             <p className="font-bold text-sm">Source Verification Warning</p>
             <p className="text-amber-800 leading-relaxed">
-              GlobalCredit policy strictly mandates at least one validated statutory source and a current verification date before publishing. Outdated or unverified articles cannot imply official verification.
+              CardInsight Online policy strictly mandates at least one validated statutory source and a current verification date before publishing. Outdated or unverified articles cannot imply official verification.
             </p>
           </div>
         </div>

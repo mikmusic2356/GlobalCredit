@@ -105,7 +105,7 @@ export const CookieConsentBanner: React.FC<CookieConsentBannerProps> = ({
               We Respect Your Financial Data & Privacy
             </h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              GlobalCredit uses strictly necessary cookies to operate calculator tools and maintain comparison state. We also utilize privacy-compliant analytics and non-intrusive AdSense units.
+              CardInsight Online uses strictly necessary cookies to operate calculator tools and maintain comparison state. We also utilize privacy-compliant analytics and non-intrusive AdSense units.
             </p>
           </div>
         </div>

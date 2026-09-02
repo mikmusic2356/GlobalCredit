@@ -85,7 +85,7 @@ export class ArticleRepository {
         art.blocks ? JSON.stringify(art.blocks) : '[]',
         isNews ? 'NEWS' : 'GUIDE',
         (art.status || 'PUBLISHED').toUpperCase(),
-        art.author?.name || 'GlobalCredit Editorial Staff',
+        art.author?.name || 'CardInsight Editorial Staff',
         art.author?.role || 'Financial Analyst',
         art.publishedDate || new Date().toISOString().split('T')[0],
         new Date().toISOString().split('T')[0],
@@ -126,7 +126,7 @@ export class ArticleRepository {
       category: 'Financial Guides & Educational Articles',
       subcategory: 'APR & Interest',
       author: {
-        name: String(r.author_name || 'GlobalCredit Staff'),
+        name: String(r.author_name || 'CardInsight Staff'),
         role: String(r.author_role || 'Senior Financial Analyst'),
       },
       featuredImage: {

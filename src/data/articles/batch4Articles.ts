@@ -110,14 +110,14 @@ export const BATCH_4_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Rewards & Loyalty',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Loyalty Market Analyst',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315182/Money_flowing_from_credit_card_202609012108.jpg',
       alt: 'Financial points currency stream evaporating representing 2026 loyalty devaluations',
       caption: 'Dynamic award pricing and bank transfer ratio reductions make points hoarding a high-risk strategy.',
-      credit: 'GlobalCredit Intelligence'
+      credit: 'CardInsight Intelligence'
     },
     blocks: [
       {
@@ -182,14 +182,14 @@ export const BATCH_4_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Fintech & Portals',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Travel Fintech Editor',
     },
     featuredImage: {
       url: 'https://res.cloudinary.com/knukm5py/image/upload/f_auto,q_auto/v1788315179/Hands_holding_credit_card_laptop_202609012108_2.jpg',
       alt: 'Comparing travel portal booking prices against direct airline reservation screens',
       caption: 'Banks are launching Points Boost programs to keep customer travel bookings inside their closed-loop apps.',
-      credit: 'GlobalCredit Media Archive'
+      credit: 'CardInsight Media Archive'
     },
     blocks: [
       {
@@ -250,7 +250,7 @@ export const BATCH_4_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Card Benefits',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Aviation & Card Perks Analyst',
     },
     featuredImage: {
@@ -316,7 +316,7 @@ export const BATCH_4_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Fintech & AI',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Fintech Intelligence Reporter',
     },
     featuredImage: {
@@ -382,7 +382,7 @@ export const BATCH_4_ARTICLES: CmsArticle[] = [
     category: 'News & Market Trends',
     subcategory: 'Macroeconomic Reports',
     author: {
-      name: 'GlobalCredit News Desk',
+      name: 'CardInsight News Desk',
       role: 'Macroeconomic Credit Analyst',
     },
     featuredImage: {

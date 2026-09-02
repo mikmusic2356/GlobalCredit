@@ -33,7 +33,7 @@ export const AiCreditAssistantModal: React.FC<AiCreditAssistantModalProps> = ({
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: `Hello! I am the **GlobalCredit Factual AI Explainer**. I provide structured, mathematically accurate, and legally verified information on credit card terminology, regulations, APR calculations, and credit score mechanics across the **${currentCountry.name}** and other global jurisdictions.\n\n*How can I help clarify your credit questions today?*`,
+      content: `Hello! I am the **CardInsight Online Factual AI Explainer**. I provide structured, mathematically accurate, and legally verified information on credit card terminology, regulations, APR calculations, and credit score mechanics across the **${currentCountry.name}** and other global jurisdictions.\n\n*How can I help clarify your credit questions today?*`,
       timestamp: 'Just now',
     },
   ]);
