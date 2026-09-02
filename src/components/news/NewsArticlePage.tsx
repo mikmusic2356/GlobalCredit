@@ -180,29 +180,35 @@ export const NewsArticlePage: React.FC<NewsArticlePageProps> = ({
           
           {/* Main Journalistic Content */}
           <div className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
-            {news.content.map((paragraph, idx) => (
-              <React.Fragment key={idx}>
-                <p className="leading-relaxed whitespace-pre-line text-slate-700">{paragraph}</p>
-                {/* Mid-article AdSense Banner */}
-                {idx === 1 && (
-                  <div className="py-2">
-                    <AdSlotInContent slotId={`news-in-content-${news.slug}`} label="Sponsored Financial News" />
-                  </div>
-                )}
-              </React.Fragment>
-            ))}
+            {Array.isArray(news.content) ? (
+              news.content.map((paragraph, idx) => (
+                <React.Fragment key={idx}>
+                  <p className="leading-relaxed whitespace-pre-line text-slate-700">{typeof paragraph === 'string' ? paragraph : JSON.stringify(paragraph)}</p>
+                  {/* Mid-article AdSense Banner */}
+                  {idx === 1 && (
+                    <div className="py-2">
+                      <AdSlotInContent slotId={`news-in-content-${news.slug}`} label="Sponsored Financial News" />
+                    </div>
+                  )}
+                </React.Fragment>
+              ))
+            ) : (
+              <p className="leading-relaxed whitespace-pre-line text-slate-700">{String(news.content || '')}</p>
+            )}
           </div>
 
           {/* Consumer Impact Analysis Box */}
-          <div className="p-6 rounded-2xl bg-blue-50/80 border border-blue-200 space-y-3">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-900">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span>¿Qué Significa Esto Para Tu Bolsillo? (Impacto para el Consumidor)</span>
+          {news.impactSummary && (
+            <div className="p-6 rounded-2xl bg-blue-50/80 border border-blue-200 space-y-3">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-900">
+                <Sparkles className="w-4 h-4 text-blue-600" />
+                <span>¿Qué Significa Esto Para Tu Bolsillo? (Impacto para el Consumidor)</span>
+              </div>
+              <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-medium">
+                {news.impactSummary}
+              </p>
             </div>
-            <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-medium">
-              {news.impactSummary}
-            </p>
-          </div>
+          )}
 
           {/* Practical Action Steps Checklist */}
           <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
@@ -227,21 +233,23 @@ export const NewsArticlePage: React.FC<NewsArticlePageProps> = ({
           </div>
 
           {/* Verified Source Attribution Card */}
-          <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
-            <div className="space-y-1">
-              <span className="font-bold text-slate-900 flex items-center gap-1.5">
-                <FileCheck2 className="w-4 h-4 text-blue-600" />
-                <span>Fuente Editorial Verificada:</span>
+          {news.sourceAttribution && (
+            <div className="p-5 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600">
+              <div className="space-y-1">
+                <span className="font-bold text-slate-900 flex items-center gap-1.5">
+                  <FileCheck2 className="w-4 h-4 text-blue-600" />
+                  <span>Fuente Editorial Verificada:</span>
+                </span>
+                <p className="text-slate-500">{news.sourceAttribution}</p>
+              </div>
+              <span className="text-[11px] px-2.5 py-1 rounded-md bg-white border border-slate-200 text-slate-500 font-semibold self-start sm:self-auto">
+                Jurisdicción: {news.country ? String(news.country).toUpperCase() : 'GLOBAL'}
               </span>
-              <p className="text-slate-500">{news.sourceAttribution}</p>
             </div>
-            <span className="text-[11px] px-2.5 py-1 rounded-md bg-white border border-slate-200 text-slate-500 font-semibold self-start sm:self-auto">
-              Jurisdicción: {news.country ? news.country.toUpperCase() : 'GLOBAL'}
-            </span>
-          </div>
+          )}
 
           {/* Tags Chips */}
-          {news.tags && news.tags.length > 0 && (
+          {Array.isArray(news.tags) && news.tags.length > 0 && (
             <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2">
               <span className="text-xs font-bold text-slate-400 uppercase">Temas:</span>
               {news.tags.map((tag, idx) => (
@@ -250,7 +258,7 @@ export const NewsArticlePage: React.FC<NewsArticlePageProps> = ({
                   className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 font-medium"
                 >
                   <Tag className="w-3 h-3 text-slate-400" />
-                  {tag}
+                  {String(tag)}
                 </span>
               ))}
             </div>

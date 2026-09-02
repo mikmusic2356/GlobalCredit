@@ -245,14 +245,16 @@ export const NewsView: React.FC<NewsViewProps> = ({
               </h2>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium bg-slate-50/70 p-3 rounded-xl border border-slate-100">
-                {news.snippet}
+                {news.snippet || ''}
               </p>
 
-              <div className="space-y-1.5 pt-2 text-xs text-slate-500 line-clamp-3 leading-relaxed">
-                {news.content[0]}
-              </div>
+              {news.content && (
+                <div className="space-y-1.5 pt-2 text-xs text-slate-500 line-clamp-3 leading-relaxed">
+                  {Array.isArray(news.content) ? news.content[0] : String(news.content)}
+                </div>
+              )}
 
-              {news.tags && news.tags.length > 0 && (
+              {Array.isArray(news.tags) && news.tags.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 pt-2">
                   {news.tags.map((t, idx) => (
                     <span
@@ -260,7 +262,7 @@ export const NewsView: React.FC<NewsViewProps> = ({
                       className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium"
                     >
                       <Tag className="w-2.5 h-2.5 text-slate-400" />
-                      {t}
+                      {String(t)}
                     </span>
                   ))}
                 </div>
