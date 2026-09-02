@@ -29,7 +29,7 @@ export const RelatedArticlesSection: React.FC<RelatedArticlesSectionProps> = ({
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-slate-500 mt-1">
-            Carefully curated financial education for {currentArticle.country.toUpperCase()} credit market dynamics.
+            Carefully curated financial education for {(currentArticle.country || 'us').toUpperCase()} credit market dynamics.
           </p>
         </div>
         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200 self-start sm:self-auto">
@@ -39,6 +39,7 @@ export const RelatedArticlesSection: React.FC<RelatedArticlesSectionProps> = ({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {relatedArticles.map((article) => {
+          const itemCountry = (article.country || 'us').toUpperCase();
           return (
             <article
               key={article.id}
@@ -51,7 +52,7 @@ export const RelatedArticlesSection: React.FC<RelatedArticlesSectionProps> = ({
                   {article.subcategory || article.category}
                 </span>
                 <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 border border-slate-200">
-                  {article.country.toUpperCase()}
+                  {itemCountry}
                 </span>
               </div>
 

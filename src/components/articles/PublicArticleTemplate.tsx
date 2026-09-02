@@ -446,7 +446,7 @@ export const PublicArticleTemplate: React.FC<PublicArticleTemplateProps> = ({
             lastUpdatedDate={article.lastUpdatedDate}
             lastVerifiedDate={article.lastVerifiedDate}
             verificationStatus={article.verificationStatus}
-            regulatoryBody={`${article.country.toUpperCase()} Statutory Financial Authorities & Banking Regulators`}
+            regulatoryBody={`${countryUpper} Statutory Financial Authorities & Banking Regulators`}
             sources={article.sources?.map((s) => ({
               title: s.name,
               url: s.url,
@@ -504,7 +504,7 @@ export const PublicArticleTemplate: React.FC<PublicArticleTemplateProps> = ({
             <ul className="space-y-2 text-xs text-slate-700">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                <span>Applicable to {article.country.toUpperCase()} banking regulations.</span>
+                <span>Applicable to {countryUpper} banking regulations.</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />

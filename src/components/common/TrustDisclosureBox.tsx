@@ -137,7 +137,7 @@ export const TrustDisclosureBox: React.FC<TrustDisclosureBoxProps> = ({
       {/* Extended Editorial Statement */}
       {showFullDisclaimer && !compact && (
         <p className="mt-3 text-[11px] text-slate-500 leading-normal">
-          GlobalCredit editorial reviews are independent. We do not fabricate, simulate, or alter APR tables, intro durations, or annual fees. Credit approval and final representative APR are determined exclusively by the respective issuing bank according to statutory affordability criteria.
+          <strong>CardInsight Online</strong> editorial reviews are independent. We do not fabricate, simulate, or alter APR tables, intro durations, or annual fees. Credit approval and final representative APR are determined exclusively by the respective issuing bank according to statutory affordability criteria.
         </p>
       )}
     </section>
