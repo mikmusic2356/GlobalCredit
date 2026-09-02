@@ -1,0 +1,6 @@
+{
+  "name": "GlobalCredit — International Credit Card Information Platform",
+  "description": "An independent, free, and comprehensive international credit card information directory and personal finance knowledge hub covering the US, Canada, UK, Australia, and New Zealand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

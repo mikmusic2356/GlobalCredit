@@ -1,0 +1,10 @@
+# CardInsight Online (cardinsight.online) robots.txt
+User-agent: *
+Allow: /
+
+# Admin and Internal Management
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap Location
+Sitemap: https://cardinsight.online/sitemap.xml

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gc-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="chip-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3A8A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Base Icon Container (Rounded Slate / Sapphire Blue Icon) -->
+  <rect x="32" y="32" width="448" height="448" rx="108" fill="url(#gc-blue-grad)" filter="url(#shadow)" />
+
+  <!-- Modern Credit Card Outline in Pure White -->
+  <rect x="96" y="144" width="320" height="224" rx="28" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-width="24" />
+
+  <!-- Card Magnetic / Tech Stripe -->
+  <rect x="96" y="196" width="320" height="44" fill="#FFFFFF" fill-opacity="0.25" />
+
+  <!-- Security Smart Chip -->
+  <rect x="136" y="268" width="56" height="42" rx="8" fill="url(#chip-grad)" />
+  <line x1="164" y1="268" x2="164" y2="310" stroke="#B45309" stroke-width="3" />
+  <line x1="136" y1="289" x2="192" y2="289" stroke="#B45309" stroke-width="3" />
+
+  <!-- Embossed Card Numbers Indicator (Modern Minimalist Dots) -->
+  <circle cx="230" cy="289" r="7" fill="#FFFFFF" />
+  <circle cx="254" cy="289" r="7" fill="#FFFFFF" />
+  <circle cx="278" cy="289" r="7" fill="#FFFFFF" />
+  <circle cx="302" cy="289" r="7" fill="#FFFFFF" />
+
+  <!-- Contactless Payment Waves Accent -->
+  <path d="M 356 264 A 36 36 0 0 1 356 314" fill="none" stroke="#60A5FA" stroke-width="12" stroke-linecap="round" />
+  <path d="M 378 250 A 54 54 0 0 1 378 328" fill="none" stroke="#93C5FD" stroke-width="12" stroke-linecap="round" opacity="0.8" />
+</svg>
