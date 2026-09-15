@@ -23,6 +23,8 @@ export type SourceType =
   | 'Financial Institution'
   | 'Research Organization'
   | 'Reputable Publication'
+  | 'Industry Publication'
+  | 'News Media'
   | 'Other';
 
 export interface ArticleSource {

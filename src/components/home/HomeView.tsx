@@ -598,7 +598,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           sources={[
             {
               title: `${currentCountry.regulator.name} Consumer Guidance Portal`,
-              url: currentCountry.regulator.officialPortal,
+              url: currentCountry.regulator.website,
               isOfficial: true,
             },
             {

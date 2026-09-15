@@ -275,7 +275,7 @@ export const GuideArticlePage: React.FC<GuideArticlePageProps> = ({
           {/* Full Trust & Transparency Disclosure Box */}
           <TrustDisclosureBox
             publishedDate={guide.publishedDate || '2026-07-15'}
-            lastUpdatedDate={guide.lastUpdatedDate || guide.lastUpdated || '2026-09-01'}
+            lastUpdatedDate={guide.lastUpdated || '2026-09-01'}
             lastVerifiedDate={guide.lastVerifiedDate || '2026-09-01'}
             verificationStatus={guide.verificationStatus || 'VERIFIED'}
             regulatoryBody="Consumer Financial Protection Bureau (CFPB) & Financial Conduct Authority (FCA)"

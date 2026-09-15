@@ -174,7 +174,6 @@ export function App() {
               article={routeState.activeArticle}
               onBack={() => navigate(RouteUrls.guides())}
               onNavigateHome={() => navigate(RouteUrls.home())}
-              onNavigateCategory={() => navigate(RouteUrls.guides())}
               onSelectArticle={(selected) => navigate(RouteUrls.articleDetail(selected.slug))}
             />
           ) : (

@@ -270,16 +270,13 @@ export const NewsArticlePage: React.FC<NewsArticlePageProps> = ({
             lastUpdatedDate={news.lastUpdatedDate || news.publishedDate}
             lastVerifiedDate={news.lastVerifiedDate || news.lastUpdatedDate || news.publishedDate}
             verificationStatus={news.verificationStatus || 'VERIFIED'}
-            sources={
-              news.sources && news.sources.length > 0
-                ? news.sources
-                : [
-                    {
-                      title: news.sourceAttribution || 'Official Financial News Wire & Central Bank Releases',
-                      isOfficial: true,
-                    },
-                  ]
-            }
+            sources={[
+              {
+                title: news.sourceAttribution || 'Official Financial News Wire & Central Bank Releases',
+                url: news.sourceUrl,
+                isOfficial: true,
+              },
+            ]}
           />
         </article>
 
