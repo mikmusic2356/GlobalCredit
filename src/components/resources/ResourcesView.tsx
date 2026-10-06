@@ -83,10 +83,14 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
           <span>Financial Literacy & Official Resources</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-          Glossary, Regulators & Helplines
+          {activeSection === 'glossary' && 'Financial Glossary & Credit Terminology A–Z'}
+          {activeSection === 'regulators' && 'Official Government Financial Regulators & Ombudsman Directory'}
+          {activeSection === 'helplines' && 'Free Non-Profit Debt Counseling & Financial Helplines'}
         </h1>
         <p className="text-slate-500 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          Direct access to official government regulatory portals, statutory ombudsman dispute boards, 100% free non-profit debt counseling services, and an exhaustive A-Z financial glossary.
+          {activeSection === 'glossary' && 'Exhaustive A–Z definitions and mathematical explanations of APR, grace periods, amortization, credit utilization, and cardholder rights.'}
+          {activeSection === 'regulators' && 'Statutory financial authorities, banking ombudsmen, and official consumer complaint portals across the US, UK, Canada, Australia, and New Zealand.'}
+          {activeSection === 'helplines' && 'Confidential, government-approved, 100% free non-profit debt advice organizations to help manage credit card balances and financial hardship.'}
         </p>
 
         {/* Section Navigation Tabs */}

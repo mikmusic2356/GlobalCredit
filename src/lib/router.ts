@@ -365,14 +365,24 @@ export function updateDocumentSeo(state: RouteState): void {
   let title = 'CardInsight Online — International Credit Card & Financial Intelligence';
   let description = 'Compare credit cards, understand APR & credit scores, calculate debt payoff and learn consumer rights across US, UK, Canada, Australia and New Zealand.';
 
-  if (state.tab === 'home') {
+  // 1. Direct Article Match (Priority)
+  if (state.activeArticle) {
+    title = `${state.activeArticle.title} | CardInsight Online`;
+    description = state.activeArticle.seo?.metaDescription || state.activeArticle.subtitle || description;
+  } else if (state.activeCard) {
+    title = `${state.activeCard.name} Review, Rates & Fees (${countryName}) | CardInsight Online`;
+    description = `In-depth editorial review for ${state.activeCard.name} by ${state.activeCard.issuer}. Regular APR ${state.activeCard.regularApr.rateDisplay}, Annual fee $${state.activeCard.annualFee}, rewards structure, perks, pros & cons.`;
+  } else if (state.activeGuide) {
+    title = `${state.activeGuide.title} | CardInsight Online`;
+    description = state.activeGuide.summary;
+  } else if (state.activeNews) {
+    title = `${state.activeNews.title} | CardInsight Online`;
+    description = state.activeNews.snippet;
+  } else if (state.tab === 'home') {
     title = 'CardInsight Online — International Credit Card Intelligence, Rates & Scores';
     description = 'Authoritative credit card directory, APR and balance transfer calculators, FICO and credit score guides, and statutory rights across 5 sovereign jurisdictions.';
   } else if (state.tab === 'cards') {
-    if (state.activeCard) {
-      title = `${state.activeCard.name} Review & Schumer Box (${countryName}) | CardInsight Online`;
-      description = `Complete financial review for ${state.activeCard.name} by ${state.activeCard.issuer}. Regular APR ${state.activeCard.regularApr.rateDisplay}, Annual fee $${state.activeCard.annualFee}, rewards structure, perks, pros & cons.`;
-    } else if (state.category && state.category !== 'all') {
+    if (state.category && state.category !== 'all') {
       const catMeta = CATEGORIES_DATA.find((c) => c.id === state.category);
       const catName = catMeta ? catMeta.name : state.category;
       title = `Best ${catName} Credit Cards in ${countryName} (2026) | CardInsight Online`;
@@ -384,12 +394,12 @@ export function updateDocumentSeo(state: RouteState): void {
   } else if (state.tab === 'credit-score') {
     if (state.creditScoreSubRoute && state.creditScoreSubRoute !== 'overview') {
       const subLabels: Record<CreditScoreSubRoute, string> = {
-        overview: 'Overview',
-        us: 'United States FICO & VantageScore System',
-        uk: 'United Kingdom Experian, Equifax & TransUnion Guide',
-        ca: 'Canada Equifax & TransUnion Score System',
-        au: 'Australia Comprehensive Credit Reporting (CCR) Guide',
-        nz: 'New Zealand Centrix & Equifax Credit System',
+        overview: 'Credit Scores Explained — FICO, VantageScore & International Bureaus',
+        us: 'United States Credit Scores: FICO, VantageScore & Bureaus',
+        uk: 'United Kingdom Credit Scores: Experian, Equifax & TransUnion Guide',
+        ca: 'Canada Credit Scores: Equifax & TransUnion System Guide',
+        au: 'Australia Credit Scores: Comprehensive Credit Reporting (CCR) Guide',
+        nz: 'New Zealand Credit Scores: Centrix, Equifax & CCCFA Framework',
         factors: '5 Core Credit Scoring Factors & Math Formulas',
         simulator: 'Interactive Credit Score Simulator & Strategy Roadmap',
       };
@@ -401,11 +411,11 @@ export function updateDocumentSeo(state: RouteState): void {
     }
   } else if (state.tab === 'calculators') {
     const calcLabels: Record<CalculatorSlug, string> = {
-      payoff: 'Debt Payoff & Compound Interest Calculator',
-      'balance-transfer': '0% Balance Transfer Net Savings Calculator',
-      rewards: 'Credit Card Rewards & Cash Back Estimator',
+      payoff: 'Credit Card Payoff & Compound Interest Calculator',
+      'balance-transfer': '0% APR Balance Transfer Savings Calculator',
+      rewards: 'Credit Card Cash Back & Rewards Estimator',
       'intro-plan': '0% Intro APR Payoff & Purchase Planner',
-      utilization: 'Credit Card Utilization Impact Gauge',
+      utilization: 'Credit Card Utilization Ratio Calculator',
       'foreign-fee': 'Foreign Currency Transaction Fee Calculator',
     };
     if (state.calculatorSlug) {
@@ -416,21 +426,11 @@ export function updateDocumentSeo(state: RouteState): void {
       description = 'Free interactive calculators for credit card payoff, balance transfers, rewards estimation, utilization impact, and foreign transaction fees.';
     }
   } else if (state.tab === 'guides') {
-    if (state.activeGuide) {
-      title = `${state.activeGuide.title} | CardInsight Online`;
-      description = state.activeGuide.summary;
-    } else {
-      title = 'Financial Guides & Credit Literacy Articles | CardInsight Online';
-      description = 'Rigorous, non-commercial financial education on APR math, balance transfers, debt snowball vs avalanche, and consumer credit protection laws.';
-    }
+    title = 'Financial Guides & Credit Literacy Articles | CardInsight Online';
+    description = 'Rigorous, non-commercial financial education on APR math, balance transfers, debt snowball vs avalanche, and consumer credit protection laws.';
   } else if (state.tab === 'news') {
-    if (state.activeNews) {
-      title = `${state.activeNews.title} | CardInsight Online`;
-      description = state.activeNews.snippet;
-    } else {
-      title = 'Credit Card News, APR Trends & Central Bank Rates | CardInsight Online';
-      description = 'Track new credit card launches, reward program refreshes, regulatory fee rulings from CFPB/FCA, and interest rate benchmark changes.';
-    }
+    title = 'Credit Card News, APR Trends & Central Bank Rates | CardInsight Online';
+    description = 'Track new credit card launches, reward program refreshes, regulatory fee rulings from CFPB/FCA, and interest rate benchmark changes.';
   } else if (state.tab === 'compare') {
     title = `Compare Credit Cards Side-by-Side (${countryName}) | CardInsight Online`;
     description = 'Side-by-side comparison matrix of credit cards: annual fees, regular APR, 0% intro offers, balance transfer terms, foreign fees, and rewards.';
@@ -438,20 +438,32 @@ export function updateDocumentSeo(state: RouteState): void {
     title = `International Financial Regulatory Frameworks (${countryName}) | CardInsight Online`;
     description = 'Explore statutory financial regulators, consumer rights legislation, and credit card market characteristics across the US, UK, Canada, Australia, and New Zealand.';
   } else if (state.tab === 'resources') {
-    title = 'Financial Glossary, Statutory Regulators & Free Helplines | CardInsight Online';
-    description = 'Access verified directory of government financial regulators (CFPB, FCA, FCAC, ASIC), free non-profit debt counseling, and an A-Z financial glossary.';
+    if (state.resourcesSubRoute && state.resourcesSubRoute !== 'overview') {
+      const resLabels: Record<ResourcesSubRoute, string> = {
+        overview: 'Financial Glossary, Statutory Regulators & Consumer Helplines',
+        glossary: 'Financial Glossary & Credit Terminology A–Z',
+        regulators: 'Statutory Financial Regulators & Consumer Protection Directory',
+        rights: 'Consumer Credit Rights & Statutory Protections',
+        counseling: 'Free Non-Profit Debt Counseling & Financial Helplines',
+      };
+      title = `${resLabels[state.resourcesSubRoute]} | CardInsight Online`;
+      description = `Access verified resources for ${resLabels[state.resourcesSubRoute].toLowerCase()} across US, UK, Canada, Australia, and New Zealand.`;
+    } else {
+      title = 'Financial Glossary, Statutory Regulators & Free Helplines | CardInsight Online';
+      description = 'Access verified directory of government financial regulators (CFPB, FCA, FCAC, ASIC), free non-profit debt counseling, and an A-Z financial glossary.';
+    }
   } else if (state.tab === 'about') {
-    title = 'About CardInsight Online — Editorial Standards & Methodology';
+    title = 'About CardInsight Online — Editorial Standards & Methodology | CardInsight Online';
     description = 'Learn about CardInsight Online (cardinsight.online), our strict independence standards, data verification methodology, and transparent advertising policies.';
   } else if (state.tab === 'terms') {
-    title = 'Términos y Condiciones de Uso | CardInsight Online';
-    description = 'Términos legales, exención de responsabilidad no financiera y condiciones de uso de la plataforma CardInsight Online (cardinsight.online).';
+    title = 'Terms & Conditions of Service | CardInsight Online';
+    description = 'Legal terms, non-financial advice disclaimer, and terms of service of CardInsight Online (cardinsight.online).';
   } else if (state.tab === 'privacy-policy') {
-    title = 'Política de Privacidad y Protección de Datos | CardInsight Online';
-    description = 'Gobernanza de datos, cumplimiento CCPA/GDPR y privacidad en CardInsight Online.';
+    title = 'Privacy Policy & Data Protection | CardInsight Online';
+    description = 'Data governance, CCPA/GDPR compliance, and privacy practices at CardInsight Online.';
   } else if (state.tab === 'cookie-policy') {
-    title = 'Política de Cookies y Preferencias | CardInsight Online';
-    description = 'Políticas de tecnologías de almacenamiento local y cookies en CardInsight Online.';
+    title = 'Cookie Policy & Consent Preferences | CardInsight Online';
+    description = 'Cookie technologies and local storage preferences on CardInsight Online.';
   }
 
   // Apply Document Head updates

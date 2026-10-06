@@ -5,7 +5,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-new-launch-zero-fx-global',
     slug: 'next-generation-zero-fx-travel-cards-launch',
-    title: 'New Wave of Zero Foreign Transaction Fee Travel Cards Launches Across UK & Canada',
+    title: 'Next-Generation Zero-FX Travel Cards Launch Across UK & Canada',
     publishedDate: '2026-08-28',
     lastUpdatedDate: '2026-08-30',
     country: 'global',
@@ -26,7 +26,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-benefit-updates-lounge-access',
     slug: 'premium-airport-lounge-benefit-restructuring',
-    title: 'Major Card Issuers Restructure Premium Airport Lounge Access Policies',
+    title: 'Premium Airport Lounge Benefit Restructuring: Major Issuers Update Access Rules',
     publishedDate: '2026-08-22',
     lastUpdatedDate: '2026-08-26',
     country: 'us',
@@ -47,7 +47,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-rewards-grocery-dining-acceleration',
     slug: 'everyday-grocery-and-dining-rewards-acceleration',
-    title: 'Banks Accelerate Everyday Category Rewards on Groceries, EV Charging, and Dining',
+    title: 'Everyday Grocery and Dining Rewards Acceleration: Banks Boost Multipliers',
     publishedDate: '2026-08-16',
     lastUpdatedDate: '2026-08-20',
     country: 'global',
@@ -67,7 +67,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-cfpb-late-fee-rules',
     slug: 'us-cfpb-credit-card-late-fee-rule-developments',
-    title: 'US CFPB Credit Card Late Fee Regulation Developments and Market Shifts',
+    title: 'US CFPB Credit Card Late Fee Rule Developments and Market Shifts',
     publishedDate: '2026-08-10',
     lastUpdatedDate: '2026-08-15',
     country: 'us',
@@ -88,7 +88,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-intro-offers-balance-transfers-28mo',
     slug: 'zero-intro-apr-balance-transfer-promotions-lengthen',
-    title: '0% Balance Transfer Promotional Periods Reach Historic 28-Month Windows in the UK',
+    title: '0% Intro APR Balance Transfer Promotions Lengthen to 28 Months in UK',
     publishedDate: '2026-08-05',
     lastUpdatedDate: '2026-08-12',
     country: 'uk',
@@ -109,7 +109,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-uk-fca-persistent-debt-rules',
     slug: 'uk-fca-persistent-debt-guidance-update',
-    title: 'UK FCA Enforces Tougher Persistent Debt Interventions for Card Issuers',
+    title: 'UK FCA Persistent Debt Guidance Update: Tougher Issuer Rules',
     publishedDate: '2026-07-28',
     lastUpdatedDate: '2026-08-01',
     country: 'uk',
@@ -129,7 +129,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-issuer-underwriting-open-banking',
     slug: 'open-banking-cashflow-underwriting-adoption',
-    title: 'Major Global Issuers Adopt Open Banking Cashflow Data for Fair-Credit Approvals',
+    title: 'Open Banking Cashflow Underwriting Adoption for Fair-Credit Approvals',
     publishedDate: '2026-07-20',
     lastUpdatedDate: '2026-07-25',
     country: 'global',
@@ -149,7 +149,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-seasonal-black-friday-holiday-shopping',
     slug: 'black-friday-holiday-shopping-credit-card-strategies',
-    title: 'Seasonal Strategy: Maximizing Credit Card Purchase Protections & 0% Promos During Holiday Shopping',
+    title: 'Black Friday & Holiday Shopping Credit Card Strategies: Maximizing Protections',
     publishedDate: '2026-08-30',
     lastUpdatedDate: '2026-09-01',
     country: 'global',
@@ -170,7 +170,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-seasonal-travel-season-fx-dcc-traps',
     slug: 'international-travel-season-dcc-currency-traps',
-    title: 'Travel Season Advisory: How to Avoid Dynamic Currency Conversion (DCC) Traps Abroad',
+    title: 'International Travel Season DCC Currency Traps: How to Avoid Surcharges',
     publishedDate: '2026-07-15',
     lastUpdatedDate: '2026-07-22',
     country: 'global',
@@ -190,7 +190,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-central-bank-rates-impact',
     slug: 'central-bank-rates-credit-card-aprs',
-    title: 'Central Bank Policy Rates and Their Direct Impact on Global Credit Card APRs',
+    title: 'Central Bank Policy Rates and Their Impact on Credit Card APRs',
     publishedDate: '2026-08-25',
     lastUpdatedDate: '2026-08-29',
     country: 'global',
@@ -212,7 +212,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-nz-cccfa-affordability-updates',
     slug: 'new-zealand-cccfa-credit-card-affordability-rule-changes',
-    title: 'New Zealand Commerce Commission Refines CCCFA Credit Card Affordability Rules',
+    title: 'New Zealand CCCFA Credit Card Affordability Rule Changes',
     publishedDate: '2026-08-29',
     lastUpdatedDate: '2026-09-01',
     country: 'nz',
@@ -254,7 +254,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-au-rba-surcharging-review',
     slug: 'australia-rba-merchant-surcharging-and-bnpl-review',
-    title: 'Reserve Bank of Australia Reviews Merchant Card Surcharging Rules',
+    title: 'Australia RBA Merchant Surcharging and BNPL Regulatory Review',
     publishedDate: '2026-08-27',
     lastUpdatedDate: '2026-08-31',
     country: 'au',
@@ -301,7 +301,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-point-devaluation-squeeze-2026',
     slug: 'credit-card-points-devaluation-trends',
-    title: 'Credit Card Points Devaluations: Why Hoarding Rewards Is High Risk',
+    title: 'Credit Card Points Devaluation Trends: Why Hoarding Rewards Is High Risk',
     publishedDate: '2026-08-29',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -328,7 +328,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-bank-travel-portals-war-2026',
     slug: 'bank-travel-portals-trends',
-    title: 'The Rise of Bank Travel Portals: Portals vs. Partner Transfers',
+    title: 'Bank Travel Portals Trends: Portals vs. Partner Direct Transfers',
     publishedDate: '2026-08-30',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -355,7 +355,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-airport-lounge-restrictions-2026',
     slug: 'credit-card-lounge-access-restrictions',
-    title: 'Airport Lounge Access: Navigating Overcrowding and New Rules',
+    title: 'Credit Card Lounge Access Restrictions: Navigating Overcrowding and New Rules',
     publishedDate: '2026-08-30',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -382,7 +382,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-ai-in-credit-cards-2026',
     slug: 'ai-credit-card-trends',
-    title: 'AI and Your Credit Card: Offers, Lounge Management & Security',
+    title: 'AI Credit Card Trends: Offers, Underwriting, Lounge Management & Security',
     publishedDate: '2026-08-31',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -409,7 +409,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-consumer-credit-health-2026',
     slug: 'us-consumer-debt-trends-2026',
-    title: 'U.S. Credit Card Debt Statistics 2026: Balances and Delinquencies',
+    title: 'US Consumer Debt Trends 2026: Balances, APRs and Delinquencies',
     publishedDate: '2026-08-31',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -436,7 +436,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-cfpb-late-fee-regulation-2026',
     slug: 'cfpb-credit-card-late-fees',
-    title: 'The CFPB Late Fee Regulation Fight: What Fee Caps Mean for Consumers',
+    title: 'CFPB Credit Card Late Fees: What Federal Cap Rules Mean for Consumers',
     publishedDate: '2026-08-29',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -463,7 +463,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-bilt-cardless-merger-rewards-2026',
     slug: 'bilt-cardless-merger-rewards-impact',
-    title: 'Credit Card Mergers in 2026: Navigating Bilt’s Shift to Cardless',
+    title: 'Bilt Cardless Transition: Rewards Program & Portfolio Impact',
     publishedDate: '2026-08-30',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -490,7 +490,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-delinquency-metrics-divergence-2026',
     slug: 'credit-card-delinquency-rates-divergence',
-    title: 'Credit Card Delinquency Rates: Resolving Bureau vs. Lender Discrepancies',
+    title: 'Credit Card Delinquency Rates Divergence: Bureau vs Lender Discrepancies',
     publishedDate: '2026-08-30',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -517,7 +517,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-airline-baggage-fee-hikes-cards-2026',
     slug: 'airline-baggage-fee-hikes-free-checked-bag-perk',
-    title: 'Airline Baggage Fee Hikes: Why Free Bag Perks Are Vital in 2026',
+    title: 'Airline Baggage Fee Hikes: Why Free Checked Bag Perks Matter in 2026',
     publishedDate: '2026-08-31',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -544,7 +544,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-dynamic-award-pricing-partners-2026',
     slug: 'dynamic-award-pricing-partner-airlines',
-    title: 'Dynamic Award Pricing: How Partner Redemptions Are Changing',
+    title: 'Dynamic Award Pricing on Partner Airlines: How Redemptions Are Changing',
     publishedDate: '2026-08-31',
     lastUpdatedDate: '2026-09-01',
     country: 'us',
@@ -571,7 +571,7 @@ export const NEWS_AND_TRENDS_DATA: NewsItem[] = [
   {
     id: 'news-us-bank-ecosystem-loyalty-lockin-2026',
     slug: 'bank-credit-card-ecosystem-loyalty',
-    title: 'Bank Travel Portals: Navigating Issuer Ecosystem Lock-In in 2026',
+    title: 'Bank Credit Card Ecosystem Loyalty: Navigating Issuer Lock-In in 2026',
     publishedDate: '2026-08-31',
     lastUpdatedDate: '2026-09-01',
     country: 'us',

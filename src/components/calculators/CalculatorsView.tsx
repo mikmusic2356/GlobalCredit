@@ -139,10 +139,22 @@ export const CalculatorsView: React.FC<CalculatorsViewProps> = ({
           <span>Interactive Financial Tool Suite ({country.name} • {country.currency.code})</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-          Credit & Debt Calculators
+          {activeCalc === 'payoff' && 'Credit Card Payoff & Compound Interest Calculator'}
+          {activeCalc === 'balance-transfer' && '0% APR Balance Transfer Savings Calculator'}
+          {activeCalc === 'rewards' && 'Credit Card Cash Back & Rewards Estimator'}
+          {activeCalc === 'intro-plan' && '0% Intro APR Payoff & Purchase Planner'}
+          {activeCalc === 'utilization' && 'Credit Card Utilization Ratio Calculator'}
+          {activeCalc === 'foreign-fee' && 'Foreign Currency Transaction Fee Calculator'}
+          {!['payoff', 'balance-transfer', 'rewards', 'intro-plan', 'utilization', 'foreign-fee'].includes(activeCalc) && 'Credit & Debt Calculators Suite'}
         </h1>
         <p className="text-slate-500 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          Mathematically precise financial tools to calculate debt payoff timelines, balance transfer savings, rewards return, 0% APR payment targets, and credit utilization impact.
+          {activeCalc === 'payoff' && 'Calculate how long it takes to clear revolving debt, minimum payment traps, and total compound interest charges across international rates.'}
+          {activeCalc === 'balance-transfer' && 'Evaluate the exact net dollar savings after factoring in 3% to 5% upfront transfer fees vs ongoing APR interest avoidance.'}
+          {activeCalc === 'rewards' && 'Estimate your net annual cash back and points valuation based on customized category monthly spend patterns.'}
+          {activeCalc === 'intro-plan' && 'Plan monthly interest-free payoff installments before your introductory 0% APR promotion expires.'}
+          {activeCalc === 'utilization' && 'Measure aggregate and per-card credit utilization ratios to keep your profile within optimal scoring brackets (under 10%).'}
+          {activeCalc === 'foreign-fee' && 'Simulate foreign transaction markup and currency exchange conversion fees when purchasing abroad.'}
+          {!['payoff', 'balance-transfer', 'rewards', 'intro-plan', 'utilization', 'foreign-fee'].includes(activeCalc) && 'Mathematically precise financial tools to calculate debt payoff timelines, balance transfer savings, rewards return, 0% APR payment targets, and credit utilization impact.'}
         </p>
 
         {/* Tab switcher */}

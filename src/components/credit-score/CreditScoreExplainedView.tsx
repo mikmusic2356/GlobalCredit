@@ -358,10 +358,24 @@ export const CreditScoreExplainedView: React.FC<CreditScoreExplainedViewProps> =
           <span>Factual & Unbiased Financial Education</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
-          Credit Scores Explained
+          {subRoute === 'factors' && '5 Core Credit Scoring Factors & Math Formulas'}
+          {subRoute === 'simulator' && 'Interactive Credit Score Simulator & Strategy Roadmap'}
+          {subRoute === 'us' && 'United States Credit Scores: FICO, VantageScore & Bureaus'}
+          {subRoute === 'uk' && 'United Kingdom Credit Scores: Experian, Equifax & TransUnion Guide'}
+          {subRoute === 'ca' && 'Canada Credit Scores: Equifax & TransUnion System Guide'}
+          {subRoute === 'au' && 'Australia Credit Scores: Comprehensive Credit Reporting (CCR) Guide'}
+          {subRoute === 'nz' && 'New Zealand Credit Scores: Centrix, Equifax & CCCFA Framework'}
+          {(!subRoute || subRoute === 'overview') && 'Credit Scores Explained — FICO, VantageScore & International Bureaus'}
         </h1>
         <p className="text-slate-600 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed">
-          Master how credit scores work mathematically, understand scoring models (FICO, VantageScore, CCR), unpack the 5 core factors that dictate your score, and learn how to pull your official free reports across the <strong>US, Canada, UK, Australia, and New Zealand</strong>.
+          {subRoute === 'factors' && 'An in-depth mathematical breakdown of payment history, credit utilization, account age, credit mix, and hard inquiries across major bureaus.'}
+          {subRoute === 'simulator' && 'Simulate balance adjustments, credit limit increases, new inquiries, and dispute actions to project credit score trajectories.'}
+          {subRoute === 'us' && 'Comprehensive guide to FICO 8/9/10, VantageScore 3.0/4.0, Equifax, Experian, TransUnion, and legal FCRA dispute rights in the United States.'}
+          {subRoute === 'uk' && 'Understanding UK credit reference agencies (Experian, Equifax, TransUnion), Electoral Roll verification, and statutory reports under Consumer Credit Act 1974.'}
+          {subRoute === 'ca' && 'Equifax Canada and TransUnion Canada credit scoring models, 300-900 scale, and statutory credit file rights under federal FCAC regulations.'}
+          {subRoute === 'au' && 'Australia Comprehensive Credit Reporting (CCR), positive repayment history information (RHI), and ASIC responsible lending affordability rules.'}
+          {subRoute === 'nz' && 'Centrix, Equifax NZ, and illion scoring systems, CCCFA affordability guidelines, and free credit report access under the Credit Reporting Privacy Code.'}
+          {(!subRoute || subRoute === 'overview') && 'Master how credit scores work mathematically, understand scoring models (FICO, VantageScore, CCR), unpack the 5 core factors that dictate your score, and learn how to pull your official free reports across the US, Canada, UK, Australia, and New Zealand.'}
         </p>
 
         {/* Sub-Route SEO Navigation Pills */}
